@@ -42,10 +42,22 @@ int anagrama(char a[], char b[]) {
             y = 0;
 
             for (j = 0; j < t1; j++) {
-                if (a[i] == b[j]) {
-                    y++;
-                }
-            }
+
+    char x = a[i];
+    char w = b[j];
+
+    if (x >= 'A' && x <= 'Z') {
+        x = x + 32;
+    }
+
+    if (w >= 'A' && w <= 'Z') {
+        w = w + 32;
+    }
+
+    if (x == w) {
+        y++;
+    }
+}
 
             if (y == 0) {
                 resp = 0;
