@@ -4,7 +4,6 @@
 void cifrar( char in [], int i) {
 
 	int n = 0;
-	bool a = true;
 	int b = 0;
 
 	if(in[i] == '\0') {
@@ -20,7 +19,6 @@ int main () {
 
 	char f[100];
 	int n =0;
-	bool a = true;
 
 	scanf("%s",f);
 
