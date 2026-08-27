@@ -3,7 +3,7 @@
 //Inverte iterativamente os caracteres de uma string.
 void inverter (char in[]) {
 	int n = 0;
-	bool a = true;
+	int a = 1;
 	int b = 0;
 	int i = 0;
 	int j = 0;
@@ -14,7 +14,7 @@ void inverter (char in[]) {
 	if(in[b]) {
 	n++;
 	}else{
-	a = false; }
+	a = 0; }
 	b++;
 	}
 
@@ -37,7 +37,7 @@ int main () {
 	while(!(f[0] == 'F' && f[1] == 'I' && f[2] == 'M' && f[3] == '\0')) {
 
 		inverter(f);
-		printf("Funcao invertida: %s\n",f);
+		printf("%s\n",f);
 		scanf("%s",f);
 	}
 }
