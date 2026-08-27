@@ -22,13 +22,13 @@ int main () {
 	int n = 0;
 	int a = 0;
 	scanf ("%d", &n);
-	while(scanf("%d", &n) == 1) {
+	while(scanf ("%d", &n) == 1 ) {
 	a = soma(n);
 	printf("%d\n", a);
 	scanf( "%d", &n);
 	}
 
-return 0;
+
 }
 /*
 * 12345 - 15
