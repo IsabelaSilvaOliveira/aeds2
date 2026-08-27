@@ -3,8 +3,8 @@
 
 //calcula o comprimento da maior substring sem caracteres repetidos.
 int longa(char in[]){
-	bool a = 1;
-	bool c = 1; 
+	int a = 1;
+	int c = 1; 
 	int b = 0;
 	int h =0;
 	int n =0;
