@@ -26,7 +26,7 @@ int main () {
 	while(b) {
 	a = soma(n);
 	printf("%d\n", a);
-		if(n = 250) 
+		if(n == 250) 
 		{ b = 0;}		
 	scanf( "%d", &n);
 	}
