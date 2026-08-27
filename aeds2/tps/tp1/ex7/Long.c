@@ -3,8 +3,8 @@
 
 
 int longa(char in[]){
-	bool a = true;
-	bool c = true; 
+	bool a = 1;
+	bool c = 1; 
 	int b = 0;
 	int h =0;
 	int n =0;
@@ -16,7 +16,7 @@ int longa(char in[]){
 	if(in[b]){
         n++;
 	}else
-	{ a = false;}
+	{ a = 1;}
 	b++;
 	}
 	
@@ -24,7 +24,7 @@ int longa(char in[]){
 	  for(i = 0; i < n-1; i++) {
 		  for(j = i+1; j< n; j++) {
 			  if(in[i] == in[j] && c){
-				  c = false;
+				  c = 1;
 				  h = j;
 
 		               }
