@@ -1,7 +1,8 @@
 import java.util.Scanner;
 
-public class Is {
-	public static boolean vogais(String in) {
+public class Is {	
+ //Verifica se uma string é composta somente por vogais.
+     public static boolean vogais(String in) {
 		boolean resp = true;
 		int n = in.length();
 		for(int i = 0; i<n; i++) {
@@ -12,6 +13,7 @@ public class Is {
 		}
 		return resp;
 	}
+	//Verifica se uma string é composta somente por consoantes.
 	public static boolean consoantes(String in) {
 		boolean resp = true;
 		int n = in.length();
@@ -23,6 +25,7 @@ public class Is {
 		}
 		return resp;
 	}
+	//Verifica se uma string é composta somente por inteiros.
 	public static boolean inteiro(String in) {
 		boolean resp = true;
 		int n = in.length();
@@ -34,6 +37,7 @@ public class Is {
 		}
 		return resp;
 	}
+	//Verifica se uma string é composta somente por numeros reais.
 	public static boolean real(String in) {
                 boolean resp = true;
 		int c = 0;
@@ -85,8 +89,14 @@ public class Is {
 		}
 	}
 }
-
-
+/*
+testes:
+* aeiou - esperado: SIM NAO NAO NAO
+* bcdfg - esperado: NAO SIM NAO NAO
+* 12345 - esperado: NAO NAO SIM SIM
+* 12.5 - esperado: NAO NAO NAO SIM
+* obs: estava colocando || ao inves de && nas vogais, por isso antes tava dando errado, mas depois com && deu certo.
+*/
 
 				
 
