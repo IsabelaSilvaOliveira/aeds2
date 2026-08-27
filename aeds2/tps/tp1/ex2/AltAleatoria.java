@@ -6,9 +6,7 @@ public class AltAleatoria {
 	//metodo que ira receber a string, gerar 2 letras aleatoria, e ira substituir a primeira letra sorteada pela segunda em todoas suas aparicoes
 	public static void alteracao (String in) {
 		char l1 = (char)('a' + (Math.abs(gerador.nextInt()) % 26));
-		System.out.println("Primeira letra sorteada: "+ l1);
 		char l2 = (char)('a' + (Math.abs(gerador.nextInt()) % 26));
-		System.out.println("Segunda letra sorteada: "+ l2);
 		int n = in.length();
 		for(int i = 0; i < n; i++) {
 			char a = in.charAt(i);
