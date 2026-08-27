@@ -24,7 +24,7 @@ int main () {
 	scanf ("%d", &n);
 	while( n != 0) {
 	a = soma(n);
-	printf("%d\n", n , a);
+	printf("%d\n", a);
 	scanf( "%d", &n);
 	}
 
