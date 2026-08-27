@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+//Inverte iterativamente os caracteres de uma string.
 void inverter (char in[]) {
 	int n = 0;
 	bool a = true;
@@ -41,7 +41,12 @@ int main () {
 		scanf("%s",f);
 	}
 }
-
+/*
+* abcde - edcba
+* arara - arara
+* a - a
+* abcd - dcba
+*/
 
 
 
