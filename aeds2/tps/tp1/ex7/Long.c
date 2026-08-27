@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
+//calcula o comprimento da maior substring sem caracteres repetidos.
 int longa(char in[]){
 	bool a = 1;
 	bool c = 1; 
