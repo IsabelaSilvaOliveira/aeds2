@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
+//calcula iterativamente a soma dos dígitos de um número inteiro.
 int soma (int n) {
 
 	int a = 0;
@@ -24,9 +24,15 @@ int main () {
 	scanf ("%d", &n);
 	while( n != 0) {
 	a = soma(n);
-	printf("Soma dos digitos de %d: %d\n", n , a);
+	printf("%d\n", n , a);
 	scanf( "%d", &n);
 	}
 
 
 }
+/*
+* 12345 - 15
+* 1111 - 4
+* 9 - 9
+* 1000 - 1
+*/
