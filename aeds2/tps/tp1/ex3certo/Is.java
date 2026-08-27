@@ -80,7 +80,6 @@ public class Is {
 		               System.out.print(" ");	}
 			if(real(f)) {
 				System.out.print("SIM");
-				System.out.print(" ");
 				System.out.println();
 			}
 			else {System.out.print("NAO");
