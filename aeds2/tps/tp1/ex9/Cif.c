@@ -18,11 +18,11 @@ void cifrar( char in [], int i) {
 	
 int main () {
 
-	char f[100];
+	char f[500];
 	int n =0;
     int i = 0;
 
-	fgets(f, 100, stdin);
+	fgets(f, 500, stdin);
 
 	
     i = 0;
@@ -38,7 +38,7 @@ int main () {
 
 		cifrar(f,0);
 		printf("\n");
-		fgets(f, 100, stdin);
+		fgets(f, 500, stdin);
 
 		i = 0;
         while (f[i] != '\0') {
