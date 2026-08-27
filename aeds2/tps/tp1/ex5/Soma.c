@@ -21,10 +21,13 @@ int soma (int n) {
 int main () {
 	int n = 0;
 	int a = 0;
+    int b = 1;
 	scanf ("%d", &n);
-	while(scanf ("%d", &n) == 1 ) {
+	while(b) {
 	a = soma(n);
 	printf("%d\n", a);
+		if(n = 250) 
+		{ b = 0;}		
 	scanf( "%d", &n);
 	}
 
