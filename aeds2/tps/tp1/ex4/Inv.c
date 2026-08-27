@@ -31,14 +31,32 @@ void inverter (char in[]) {
 int main () {
 
 	char f[100];
-	scanf("%s", f);
+	int i = 0;
 
+	fgets(f, 100, stdin);
+
+	// remove o \n colocado pelo fgets
+    i = 0;
+    while (f[i] != '\0') {
+        if (f[i] == '\n') {
+            f[i] = '\0';
+        }
+        i++;
+    }
 
 	while(!(f[0] == 'F' && f[1] == 'I' && f[2] == 'M' && f[3] == '\0')) {
 
 		inverter(f);
 		printf("%s\n",f);
-		scanf("%s",f);
+		fgets(f, 100, stdin);
+
+		i = 0;
+        while (f[i] != '\0') {
+            if (f[i] == '\n') {
+                f[i] = '\0';
+            }
+            i++;
+        }
 	}
 }
 /*
@@ -46,6 +64,7 @@ int main () {
 * arara - arara
 * a - a
 * abcd - dcba
+* obs: pensei que era em c++, entao tive que mudar o sacnf para o fgets, pois nele nao tava lendo uma frase completa.
 */
 
 
