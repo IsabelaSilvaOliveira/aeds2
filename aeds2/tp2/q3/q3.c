@@ -153,12 +153,50 @@ Veiculo* lerCsv (char* carq, int* n) {
 	fclose(arq);
 	return a;
 }
+int compararModelo(char a[], char b[]) {
+    int i = 0;
+
+    while (a[i] != '\0' && b[i] != '\0') {
+
+        char x = a[i];
+        char y = b[i];
+
+        // transforma maiúscula em minúscula
+        if (x >= 'A' && x <= 'Z') {
+            x = x + 32;
+        }
+
+        if (y >= 'A' && y <= 'Z') {
+            y = y + 32;
+        }
+
+        if (x < y) {
+            return -1;
+        }
+
+        if (x > y) {
+            return 1;
+        }
+
+        i++;
+    }
+
+    if (a[i] == '\0' && b[i] == '\0') {
+        return 0;
+    }
+
+    if (a[i] == '\0') {
+        return -1;
+    }
+
+    return 1;
+}
 
 void slcsort(Veiculo a[], int n) {
 	for( int  i = 0; i< n-1; i++) {
 		int menor = i;
 		for(int j = i+1; j< n; j++ ) {
-			if(strcmp(a[j].modelo, a[menor].modelo)< 0){
+			if(compararModelo(a[j].modelo, a[menor].modelo) < 0){
 				menor = j;
 			}
 		}
