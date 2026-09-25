@@ -109,8 +109,6 @@ void formatVeiculo(Veiculo a, char* p){
 		if (i < n -1){
 			c[b]= ',';
 			b++;
-			c[b] = ' ';
-			b++;
 		}
 	}
 	c[b] = '\0';
